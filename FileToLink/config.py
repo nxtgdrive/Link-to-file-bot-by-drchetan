@@ -6,34 +6,11 @@ class Config:
     API_HASH = os.environ.get("618bc13eaeee697d6f56af3bbfea5fa7")
     Token = os.environ.get("6058745990:AAEWHaDgYuYnyZrHNHFJ6JQ8DZc5Xgvs6Nw")
     Session = os.environ.get("Session_String")
-    if Session is None or Session == "5013040165":
+    if Session is None or Session == "":
         Session = ":memory:"
     App_Name = os.environ.get("APP_NAME")
     Port = int(os.environ.get("80"))
-    Archive_Channel_ID = int(os.environ.get("{
- "update_id": 934005673,
- "message": {
-  "message_id": 1312918,
-  "from": {
-   "id": 5013040165,
-   "is_bot": false,
-   "first_name": "NEXTV",
-   "last_name": "IPTV SOLUTION",
-   "username": "nextv_iptv",
-   "language_code": "en",
-   "is_premium": true
-  },
-  "chat": {
-   "id": 5013040165,
-   "first_name": "NEXTV",
-   "last_name": "IPTV SOLUTION",
-   "username": "nextv_iptv",
-   "type": "private"
-  },
-  "date": 1676191771,
-  "text": "Test"
- }
-}"))
+    Archive_Channel_ID = int(os.environ.get("5013040165"))
     Start_Message = os.environ.get("Start_Message")
     Bot_Channel = os.environ.get("1854096020")
     if Bot_Channel and Bot_Channel.startswith("@nxtdrive_bot"):
